@@ -1,5 +1,5 @@
-# Roll-A-Ball Project
-
+# Roll-A-Ball Project ⚽
+ 
 
 ## Features Implemented
 
@@ -32,4 +32,12 @@
 - Applied materials to the ball and the environment for improved visuals.
 
 ### 5. Video demo
-here is the game in action
+Here is the game in action 
+[![Watch the video](https://img.youtube.com/vi/U1zhfmVnp5E/maxresdefault.jpg)](https://youtu.be/U1zhfmVnp5E)
+[Click here to watch the full video](https://youtu.be/U1zhfmVnp5E)
+
+
+
+
+
+
