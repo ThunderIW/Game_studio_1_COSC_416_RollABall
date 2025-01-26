@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class InputManager : MonoBehaviour
 {
     public UnityEvent<Vector2> OnMove = new UnityEvent<Vector2>();
-
+    public UnityEvent OnJump = new UnityEvent();
     void Update()
     {
         Vector2 inputVector = Vector2.zero;
@@ -14,8 +14,14 @@ public class InputManager : MonoBehaviour
         if (Input.GetKey(KeyCode.S)) inputVector += Vector2.down;
         if (Input.GetKey(KeyCode.A)) inputVector += Vector2.left;
         if (Input.GetKey(KeyCode.D)) inputVector += Vector2.right;
-
+        
         // Invoke the event with the input direction
         OnMove?.Invoke(inputVector);
+
+
+        if (Input.GetKey(KeyCode.Space)) {
+            Debug.Log("Jump Pressed");
+            OnJump?.Invoke();
+        }
     }
 }
